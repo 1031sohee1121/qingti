@@ -331,7 +331,7 @@ function Result({ result, onRestart }: { result: PredictResponse; onRestart: () 
           <div className="text-xs tracking-widest text-text-muted mb-1">SHAP 可解释分析（来自真实模型）</div>
           <h4 className="font-serif text-2xl mb-2">为什么是这个结果？</h4>
           <p className="text-sm text-text-soft mb-6">
-            红色：把结果推向<em className="not-italic text-coral">超重方向</em>　·　绿色：把结果拉向<em className="not-italic text-moss">健康方向</em>
+            红色：<em className="not-italic text-coral">支持这个判定</em>　·　绿色：<em className="not-italic text-moss">反对这个判定</em>
           </p>
           <div className="space-y-3">
             {shap_explanations.map((item, idx) => {
